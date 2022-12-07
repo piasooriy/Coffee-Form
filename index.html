@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Coffe Form</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+
+	<body>
+		<h1>Which coffe do you like?</h1>
+		<form action="result.html" method="get" class="form">
+			<fieldset>
+				<legend>Contact Details</legend>
+				<label for="firstname">Given Name</label>
+				<input 
+				type="text"
+				name="firstname"
+				autocomplete="off"
+				value=""
+				id="firstname">
+				<label for="lastname">Family Name</label>
+				<input 
+					type="text"
+					name="lastname"
+					id="lastname"
+					class="form__input-text--black">
+			</fieldset>
+
+			<fieldset>
+				<legend> Date of Birth</legend>
+				<input type="date">
+			</fieldset>
+
+			<fieldset>
+				<legend>Gender</legend>
+				<select>
+					<option selected disabled> choose gender</option>
+					<option>Woman</option>
+					<option>Man</option>
+					<option>Other</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<input type="radio"> Lavazza
+				<input type="radio"> Ali Kaffe
+				<input type="radio"> Starbucks
+				<input type="radio">	Peets Coffee
+				<input type="radio">	Ikea Coffee
+				
+			</fieldset>
+			<textarea cols="40" rows="20">Do you have any other fave coffes? Please inform us here!
+				
+			</textarea>
+			<button>Send</button>
+
+		</form>
+	</body>
+</html>
